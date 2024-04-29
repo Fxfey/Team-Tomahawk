@@ -1,0 +1,147 @@
+/*
+Theme Name: Team Tomahawk Theme
+Author: Ben 'Fxfey' Fyfe
+Description: A theme for the airsoft team which goes by 'Team Tomahawk'
+Version: 1.0
+*/
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/*
+  Josh's Custom CSS Reset Ends
+*/
+
+/* Colour Vars */
+*{
+    --black: #333333;
+    --white: #F5F5F5;
+    --meat-red: #990000; 
+}
+/* Colour Vars Ends */
+
+/* Title Font */
+.cinzel {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 4vh;
+}
+  
+body{
+    background-color: var(--black);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header-container{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.header-img{
+    max-width: 6%;
+    height: auto;
+    padding: 8px;
+}
+
+/* Nav Styling */
+.nav-links{
+    margin-left: auto;
+    margin-right: 3rem;
+    width: 60%;
+    height: 100%;
+    text-align: right;
+}
+
+.nav-item{
+    position: relative;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--black);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--meat-red);
+    transform-origin: bottom;
+    transition: transform 0.25s ease-out;
+    transform: scaleX(0);
+}
+
+.nav-item:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-join{
+
+    background-color: var(--meat-red);
+    color: var(--white);
+    padding: 5px;
+    border-radius: 3px;
+
+}
+
+.nav-join::after {
+    background-color: var(--white);
+}
+
+/* Nav Styling Ends */
+
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+
+    .header-img{
+        max-width: 18%;
+        height: auto;
+        padding: 8px;
+    }
+
+    .cinzel{
+        font-size: 3vh;
+    }
+
+}
