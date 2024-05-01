@@ -29,7 +29,7 @@ $random_quote_keys = array_rand($obtain_quotes,3);
     </div>
     <div class="secdonary-container">
         <div class="quote-container">
-            <h3 class="quote-title">Some group member quotes:</h3>
+            <h2 class="quote-title">Some group member quotes:</h2>
             <?php
 
             foreach($random_quote_keys as $quote_key){
@@ -37,7 +37,7 @@ $random_quote_keys = array_rand($obtain_quotes,3);
                 $current_info = $obtain_quotes[$quote_key];
 
                 echo "
-                <div class='quote-box right'>
+                <div class='quote-box'>
                     <img class='quote-img' src='".esc_url( get_template_directory_uri() . '/img/quote-logos/'.$current_info->user.'.png')."' alt='' >
                     <div class='quote-text'>
                         <div class='quote-script'>".$current_info->quote."</div>
@@ -51,8 +51,39 @@ $random_quote_keys = array_rand($obtain_quotes,3);
             ?>
 
         </div>
-        <div class="discord-container">
-            <iframe src="https://discord.com/widget?id=1145761190946029578&theme=dark" width="350" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        <div class="latest_post_container">
+            <h2 class="latest_post_title">Our latest blog post:</h2>
+            <?php
+            // Query the latest post
+            $args = array(
+                'post_type' => 'post',
+                'posts_per_page' => 1,
+                'orderby' => 'date',
+                'order' => 'DESC'
+            );
+
+            $latest_post_query = new WP_Query($args);
+
+            // Check if there are any posts
+            if ($latest_post_query->have_posts()) {
+                while ($latest_post_query->have_posts()) {
+                    $latest_post_query->the_post();
+
+                    echo "<div class=latest_post_box>";
+                    // Display the latest post title and content
+                    the_title('<h3 class="post_title">', '</h3>');
+                    the_content('Continue reading ' . get_the_title(), true);
+                    echo "</div>";
+                }
+            } else {
+                // If no posts are found
+                echo 'No posts found.';
+            }
+
+            // Reset post data
+            wp_reset_postdata();
+            ?>
+
         </div>
     </div>
 </div>

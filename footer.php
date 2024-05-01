@@ -1,3 +1,5 @@
+  </body>
+</html>
 <footer>
   <div class="footer-container">
     <p>Find us elsewhere!</p>

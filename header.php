@@ -32,5 +32,3 @@
             <a class="nav-join nav-item" href="">Want to join?</a>
         </div>
     </div>
-</body>
-</html>
