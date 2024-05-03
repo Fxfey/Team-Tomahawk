@@ -191,6 +191,27 @@ footer {
 }
 /* Footer Styling Ends*/
 
+.missing-page-container{
+    text-align: center;
+    height: 80vh;
+}
+
+.missing-page-container h1 {
+    font-size: 4rem;
+    color: var(--white);
+}
+
+.missing-page-container  p {
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.missing-page-container  a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
 /* Mobile devices (portrait and landscape) */
 @media only screen and (max-width: 767px) {
 

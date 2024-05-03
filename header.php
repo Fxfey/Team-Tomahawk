@@ -28,11 +28,11 @@
         <img class="header-img" src="<?php echo esc_url( get_template_directory_uri() . '/img/T2-logo-simple.png' ); ?>" alt="" >
         <h1 class="cinzel"><a class="blank-link" href="<?php echo wp_safe_redirect(''); ?>">Team Tomahawk</a></h1>
         <div class="nav-links">
-            <a class="nav-item" href="">Home</a>
-            <a class="nav-item" href="">Story</a>
-            <a class="nav-item" href="">Blog</a>
-            <a class="nav-item" href="">Reccomendations</a>
-            <a class="nav-join nav-item" href="">Want to join?</a>
+            <a class="nav-item" href="/">Home</a>
+            <a class="nav-item" href="/story">Story</a>
+            <a class="nav-item" href="/blog">Blog</a>
+            <a class="nav-item" href="/recs">Reccomendations</a>
+            <a class="nav-join nav-item" href="/join">Want to join?</a>
         </div>
         <div class="ham-container">
             <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="toggleHamburger(this);">
@@ -42,10 +42,10 @@
             </svg>
         </div>
         <div class="ham-links" id="ham-links">
-            <a class="ham-item" href="">Home</a>
-            <a class="ham-item" href="">Story</a>
-            <a class="ham-item" href="">Blog</a>
-            <a class="ham-item" href="">Reccomendations</a>
-            <a class="ham-join ham-item" href="">Want to join?</a>
+            <a class="ham-item" href="/">Home</a>
+            <a class="ham-item" href="/story">Story</a>
+            <a class="ham-item" href="/blog">Blog</a>
+            <a class="ham-item" href="/recs">Reccomendations</a>
+            <a class="ham-join ham-item" href="/join">Want to join?</a>
         </div>
     </div>

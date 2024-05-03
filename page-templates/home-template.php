@@ -3,9 +3,6 @@
 * Template Name: Home Template
 */
 
-?>
-<?php
-
 get_header();
 
 // Perform DB logic for random quotes
@@ -13,7 +10,6 @@ get_header();
 $obtain_quotes = $wpdb->get_results("SELECT * FROM xx_member_quotes");
 
 $random_quote_keys = array_rand($obtain_quotes,3);
-
 
 ?>
 
