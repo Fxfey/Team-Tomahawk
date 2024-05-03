@@ -14,7 +14,8 @@
 
 .home-explainer{
     display: flex;
-    width: 40%;
+    flex-wrap: wrap;
+    width: 60%;
     font-size: 14px;
     margin: auto;
     background-color: var(--white);
@@ -25,6 +26,12 @@
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
+.explainer-titles{
+    width: 100%;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
 .home-explainer-text{
     width: 65%;
     margin-left: 15px;
@@ -32,6 +39,7 @@
     color: var(--black);
     text-align: center;
     padding: 15px;
+    flex: 1;
 }
 
 .home-explainer-img{
@@ -117,14 +125,47 @@
 /* Mobile devices (portrait and landscape) */
 @media only screen and (max-width: 767px) {
 
-    .header-img{
-        max-width: 18%;
-        height: auto;
-        padding: 8px;
+    .home{
+        margin: 10px;
     }
 
-    .cinzel{
-        font-size: 3vh;
+    .home-explainer{
+        width: 98%;
     }
 
+    .home-explainer-img{
+        width: 80%;
+        margin: auto;
+    }
+
+    .home-explainer-text{
+        margin: 0 5% 0 5%;
+        width: 80%;
+    }
+      
+    .secdonary-container{
+        flex-direction: column;
+    }
+
+    .quote-container{
+        width: 95%;
+    }
+
+    .quote-box{
+        width: 95%;
+        display: inline;
+    }
+
+    .quote-img{
+        margin: 0 5px 0 0;
+        float: left;
+    }
+
+    .latest_post_container{
+        width: 95%;
+    }
+
+    .latest_post_box{
+        width: 95%;
+    }
 }

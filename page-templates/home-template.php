@@ -21,9 +21,11 @@ $random_quote_keys = array_rand($obtain_quotes,3);
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(). '/css/home.css' ?>">
 
 <div class="home">
-    <h2 class="home-title">Team Tomahawk</h2>
-    <h3 class="home-sub-title">Airsoft Group from the United Kingdom</h3>
     <div class="home-explainer">
+        <div class="explainer-titles">
+            <h2 class="home-title">Team Tomahawk</h2>
+            <h3 class="home-sub-title">Airsoft Group from the United Kingdom</h3>
+        </div>
         <img class="home-explainer-img" src="<?php echo esc_url( get_template_directory_uri() . '/img/T2-group.jpg' ); ?>" alt="" >
         <p class="home-explainer-text">Team Tomahawk are a group of Airsofters who have diverse backgrounds and experiences. We often attend regular skirmishes together and have started doing "Recons" to other sites that are a bit further away from where we are used to. We have also started to do "Expeditions" where long distances are travelled to find some of the best Airsoft sites around (but not limited to....) the UK!</p>
     </div>
