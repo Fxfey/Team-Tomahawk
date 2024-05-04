@@ -26,7 +26,7 @@
 <body>
     <div class="header-container">
         <img class="header-img" src="<?php echo esc_url( get_template_directory_uri() . '/img/T2-logo-simple.png' ); ?>" alt="" >
-        <h1 class="cinzel"><a class="blank-link" href="<?php echo wp_safe_redirect(''); ?>">Team Tomahawk</a></h1>
+        <h1 class="cinzel"><a class="blank-link" href="/">Team Tomahawk</a></h1>
         <div class="nav-links">
             <a class="nav-item" href="/">Home</a>
             <a class="nav-item" href="/story">Story</a>
