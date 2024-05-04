@@ -126,6 +126,26 @@
 .post_title{
     width: 100%;
 }
+
+.more-link{
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--meat-red);
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    -webkit-transition : -webkit-filter 100ms linear
+
+}
+
+.more-link:hover{
+    filter: brightness(1.2);
+    -webkit-transition : -webkit-filter 100ms linear
+}
 /* home styling ends */
 
 /* Mobile devices (portrait and landscape) */

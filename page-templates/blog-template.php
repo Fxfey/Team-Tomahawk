@@ -35,10 +35,12 @@ get_header();
             foreach ($get_all_posts as $current_post){
 
                 echo "
-                <div class='post-container'>
-                    <div class='title'>$current_post->post_title</div>
-                    <div class='date'>$current_post->post_date</div>
-                    <div class='content'>".substr($current_post->post_content, 0, 100)."....</div>
+                <div class='wrapper'>
+                    <div class='post-container'>
+                        <div class='title'>$current_post->post_title</div>
+                        <div class='date'>$current_post->post_date</div>
+                        <div class='content'>$current_post->post_content</div>
+                    </div>
                     <div class='link-container'>
                         <a href='$current_post->guid' class='link'>Read me!</a>
                     </div>

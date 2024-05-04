@@ -82,7 +82,7 @@ $obtain_quotes = $wpdb->get_results("SELECT * FROM xx_member_quotes");
                     echo "<div class=latest_post_box>";
                     // Display the latest post title and content
                     the_title('<h3 class="post_title">', '</h3>');
-                    the_content('Continue reading ' . get_the_title(), true);
+                    the_content('Continue reading!', true);
                     echo "</div>";
                 }
             } else {
