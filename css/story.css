@@ -1,0 +1,180 @@
+.story_title{
+    text-align: center;
+    color: var(--white);
+}
+
+.story_sub_title{
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.intro-container{
+    width: 100%;
+    display: flex;
+}
+
+.story-intro{
+    width: 45%;
+    height: fit-content;
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 15px;
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* Timeline Code */
+.timeline-container{
+    display: flex;
+}
+
+.outer{
+    margin: auto;
+}
+
+/* Card container */
+.card {
+    position: relative;
+    max-width: 25%;
+    margin: auto;
+}
+
+/* setting padding based on even or odd */
+.card:nth-child(odd) {
+    padding: 30px 0 30px 30px;
+}
+.card:nth-child(even) {
+    padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: solid var(--meat-red);
+}
+
+/* Setting the border of top, bottom, left */
+.card:nth-child(odd)::before {
+    left: 0px;
+    top: -4.5px;
+    bottom: -4.5px;
+    border-width: 5px 0 5px 5px;
+    border-radius: 50px 0 0 50px;
+}
+
+/* Setting the top and bottom to "-5px" because earlier it was out of a pixel in mobile devices */
+@media only screen and (max-width: 400px) {
+    .card:nth-child(odd)::before {
+        top: -5px;
+        bottom: -5px;
+    }
+}
+
+/* Setting the border of top, bottom, right */
+.card:nth-child(even)::before {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 50px 50px 0;
+}
+
+/* Removing the border if it is the first card */
+.card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+    top: 42.5px;
+}
+
+
+/* Removing the border if it is the last card  and it's odd */
+.card:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+    bottom: 50px;
+    border-radius: 50px 0px 0px 15px;
+}
+
+/* Removing the border if it is the last card  and it's even */
+.card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+    bottom: 50px;
+    border-radius: 0px 50px 15px 0px;
+}
+
+/* Information about the timeline */
+.info {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    color: var(--black);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+/* Title of the card */
+.title {
+    color: var(--meat-red);
+    position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    /* background: white; */
+    border-radius: 999px;
+    border: 6px solid var(--white);
+}
+
+/* text right if the card is even  */
+    .card:nth-child(even) > .info > .title {
+    text-align: right;
+}
+
+/* text right if the card is even  */
+    .card:nth-child(even) > .info > .card-date {
+    text-align: right;
+}
+
+/* setting dot to the left if the card is odd */
+    .card:nth-child(odd) > .info > .title::before {
+    left: -44px;
+}
+
+/* setting dot to the right if the card is odd */
+    .card:nth-child(even) > .info > .title::before {
+    right: -44px;
+}
+
+.card-date{
+    color: var(--grey);
+}
+
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+
+    .story-intro{
+        width: 95%;
+    }
+
+    .card{
+        max-width: 80%;
+    }
+
+    .card:last-child::before{
+        bottom: 230px;
+    }
+}
