@@ -16,7 +16,7 @@ The them creates a fully responsive site that holds the specifics of what my fri
 A page dedicated to a brief explainer of the group including an image, below that is two sections. A quotes area which randomly shows three real quotes from members which includes a real image of them. Next to this we have the latest blog post.
 <br>
 - Story
-The story page contains a timeline of T2's *(Team Tomahawk)* events which is pulled from a database table and dynamically displayed.
+The story page contains a timeline of T2's (Team Tomahawk) events which is pulled from a database table and dynamically displayed.
 <br>
 - Blog
 A place to contain larger scale written descriptions (with photos) of events attended or even just containing anything airsoft!
