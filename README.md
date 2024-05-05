@@ -6,8 +6,8 @@ Team Tomahawk is an airsoft group owned by a friend of mine, they play all over 
 
 This Repository contains two main things:
 
-1. [WordPress Theme](#/tree/main)
-2. [Endpoints Folder](#/tree/main/endpoints)
+1. [WordPress Theme](https://github.com/Fxfey/Team-Tomahawk/tree/main)
+2. [Endpoints Folder](https://github.com/Fxfey/Team-Tomahawk/tree/main/endpoints)
 
 ## WordPress Theme
 
