@@ -80,13 +80,12 @@
 /* Mobile devices (portrait and landscape) */
 @media only screen and (max-width: 767px) {
 
-    .wrapper{
-        width: 90%;
+    .post-container{
+        width: 100%;
     }
 
-    .post-list{
+    .recs-list{
         flex-wrap: wrap;
-        width: 90%;
     }
 
 }
