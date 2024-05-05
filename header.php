@@ -31,7 +31,7 @@
             <a class="nav-item" href="/">Home</a>
             <a class="nav-item" href="/story">Story</a>
             <a class="nav-item" href="/blog">Blog</a>
-            <a class="nav-item" href="/recs">Reccomendations</a>
+            <a class="nav-item" href="/recs">Recommendations</a>
             <a class="nav-join nav-item" href="/join">Want to join?</a>
             <?php
                 if ( is_user_logged_in() ) {
