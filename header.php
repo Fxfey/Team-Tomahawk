@@ -33,6 +33,19 @@
             <a class="nav-item" href="/blog">Blog</a>
             <a class="nav-item" href="/recs">Reccomendations</a>
             <a class="nav-join nav-item" href="/join">Want to join?</a>
+            <?php
+                if ( is_user_logged_in() ) {
+                    
+                    $user_info = wp_get_current_user();
+
+                    if ($user_info->roles[0] === 'administrator'){
+
+                        echo '<a class="nav-join nav-item" href="/tomahawk-admin">Admin Panel</a>';
+
+                    }
+
+                }
+            ?>
         </div>
         <div class="ham-container">
             <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="toggleHamburger(this);">
