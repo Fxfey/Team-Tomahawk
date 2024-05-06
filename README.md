@@ -13,23 +13,23 @@ This Repository contains two main things:
 
 The them creates a fully responsive site that holds the specifics of what my friend Dan wanted the site to contain:
 - Homepage
-A page dedicated to a brief explainer of the group including an image, below that is two sections. A quotes area which randomly shows three real quotes from members which includes a real image of them. Next to this we have the latest blog post.
+<br>A page dedicated to a brief explainer of the group including an image, below that is two sections. A quotes area which randomly shows three real quotes from members which includes a real image of them. Next to this we have the latest blog post.
 <br>
 
 - Story
-The story page contains a timeline of T2's (Team Tomahawk) events which is pulled from a database table and dynamically displayed.
+<br>The story page contains a timeline of T2's (Team Tomahawk) events which is pulled from a database table and dynamically displayed.
 <br>
 
 - Blog
-A place to contain larger scale written descriptions (with photos) of events attended or even just containing anything airsoft!
+<br>A place to contain larger scale written descriptions (with photos) of events attended or even just containing anything airsoft!
 <br>
 
 - Recommendations
-This page showcases the site the group regularly plays at and recommends to players, this page is hardcoded as it it very unlikely to change.
+<br>This page showcases the site the group regularly plays at and recommends to players, this page is hardcoded as it it very unlikely to change.
 <br>
 
 - Joining
-The Join page displays a form for people to submit some information about themselves, after this will send an email directly to Dan for him to review / speak to them about.
+<br>The Join page displays a form for people to submit some information about themselves, after this will send an email directly to Dan for him to review / speak to them about.
 
 ## Endpoints Folder
 
