@@ -33,7 +33,8 @@ The them creates a fully responsive site that holds the specifics of what my fri
 
 ## Endpoints Folder
 
-The endpoints folder contains a few API endpoints i made which live on the same server as the site, although it is not very safe to make the exact code in the endpoints public, for project purposes i have decided to do so.
+The endpoints folder contains a few API endpoints I made which live on the same server as the site, although it is not very safe to make the exact code in the endpoints public, for project purposes I have decided to do so.
+They will not function where they currently live, they need to be moved to 1 level below the 'public' folder in order to work. I have just decided to include them here for project purposes.
 
 - Auth Endpoint
 
